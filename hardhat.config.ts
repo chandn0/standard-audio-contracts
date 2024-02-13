@@ -7,7 +7,7 @@ import "@nomiclabs/hardhat-etherscan";
 import { HardhatUserConfig } from "hardhat/config";
 
 const config: HardhatUserConfig = {
-  defaultNetwork: "hardhat",
+  defaultNetwork: "buildbear",
   gasReporter: {
     currency: "USD",
     gasPrice: 60,
@@ -20,6 +20,9 @@ const config: HardhatUserConfig = {
   networks: {
     hardhat: {
       chainId: 1337,
+    },
+    buildbear: {
+      url: "https://minio.delta.buildbear.io/submit/chandan-nodeId-4"
     },
     // rinkeby: {
     //   url: `https://eth-rinkeby.alchemyapi.io/v2/${alchemyApiKey}`,
